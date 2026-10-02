@@ -1,0 +1,14 @@
+{
+  "name": "nova-cart",
+  "version": "1.0.0",
+  "description": "NOVA CART — Full-Stack E-Commerce Platform",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["ecommerce", "react", "nodejs", "mongodb", "fullstack"],
+  "author": "NOVA CART",
+  "license": "MIT"
+}
