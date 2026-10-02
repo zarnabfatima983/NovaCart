@@ -17,8 +17,10 @@ const app = express();
 // Security middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL
-    ? process.env.CLIENT_URL.split(',').map(o => o.trim())
+  origin: process.env.NODE_ENV === 'production'
+    ? process.env.CLIENT_URL
+      ? process.env.CLIENT_URL.split(',').map(o => o.trim())
+      : true
     : 'http://localhost:3000',
   credentials: true,
 }));
