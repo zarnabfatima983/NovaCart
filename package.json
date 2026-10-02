@@ -2,13 +2,14 @@
   "name": "nova-cart",
   "version": "1.0.0",
   "description": "NOVA CART Full-Stack E-Commerce Platform",
-  "main": "server/server.js",
   "scripts": {
-    "start": "cd server && node server.js",
+    "start": "node server.js",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
-    "seed": "cd server && node utils/seeder.js",
-    "install:all": "cd server && npm install && cd ../client && npm install"
+    "seed": "cd server && node utils/seeder.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": ["ecommerce", "react", "nodejs", "mongodb"],
   "author": "NOVA CART",
